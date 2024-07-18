@@ -6,33 +6,48 @@
     <title>Table</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="mb-6 border border-coolGray-100"></div>
-<div class="overflow-hidden border border-coolGray-100 rounded-md shadow-dashboard">
-  <div class="overflow-x-auto">
-    <table class="w-full" id="isiTabel">
-      <tr class="whitespace-nowrap h-11 bg-coolGray-50 bg-opacity-80 border-b border-coolGray-100">
-        <th class="px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
-          <div class="flex items-center">
-           
-            <p></p>
-          </div>
-        </th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">ID</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Nama Pemain</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-center">Nama Club</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Liga</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Tahun berdiri</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Stadion</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Manajer</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Logo</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Aksi</th>
-        <th class="bg-blue-500 text-white whitespace-nowrap font-semibold text-xs uppercase text-center"></th>
-        </tr>
-    </table>
-  </div>
-</div>
-<script type="module" src="../js/fetch_bola.js"></script>
-<script src="../js/controller/delete.js"></script>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="text-white text-lg font-semibold">Football Club Data</div>
+                <div>
+                    <a href="index.html" class="bg-white text-blue-500 px-3 py-2 rounded hover:bg-gray-200">Back</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Table Container -->
+    <div class="container mx-auto mt-8">
+        <div class="mb-6 border border-coolGray-100"></div>
+        <div class="overflow-hidden border border-coolGray-100 rounded-md shadow-dashboard">
+            <div class="overflow-x-auto">
+                <table class="w-full" id="isiTabel">
+                    <tr class="whitespace-nowrap h-11 bg-coolGray-50 bg-opacity-80 border-b border-coolGray-100">
+                        <th class="px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
+                            <div class="flex items-center">
+                                <p></p>
+                            </div>
+                        </th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">ID</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Nama Pemain</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-center">Nama Club</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Liga</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Tahun berdiri</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Stadion</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Manajer</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Logo</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap px-4 font-semibold text-xs uppercase text-left">Aksi</th>
+                        <th class="bg-blue-500 text-white whitespace-nowrap font-semibold text-xs uppercase text-center"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/fetch_bola.js"></script>
+    <script src="../js/controller/delete.js"></script>
 </body>
 </html>
