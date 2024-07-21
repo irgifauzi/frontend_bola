@@ -15,8 +15,9 @@ function isiRow(value) {
             .replace("#manajer#", value.tim.manajer)
             .replace("#logo#", `<img src="${value.tim.logo}"/>`)
             .replace("#IDEDIT#", value._id)
-            .replace("#IDHAPUS#", value._id);
-            
+            .replace("#IDHAPUS#", value._id)
+            .replace("#detail#", value._id)
+
         addInner("isiTabel", content);
 }
 
